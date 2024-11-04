@@ -7,3 +7,9 @@ type Daily struct {
 	Workout string
 	Date    time.Time
 }
+
+type Weekplan struct {
+	Id      int
+	Day     string
+	Workout string
+}

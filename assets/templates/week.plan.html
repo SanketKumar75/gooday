@@ -1,0 +1,14 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        This is your Weekly plan {{range .Workout}}
+        <article>
+            <h2>{{.Day}} {{.Workout}}</h2>
+        </article>
+        {{end}}
+    </body>
+</html>
