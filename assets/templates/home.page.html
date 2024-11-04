@@ -1,0 +1,14 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        This is my home page {{range .Daily}}
+        <article>
+            <h2>{{.Workout}} <time datetime="{{.Date}}">{{.Date}}</time></h2>
+        </article>
+        {{end}}
+    </body>
+</html>
